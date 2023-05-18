@@ -14,7 +14,7 @@ class PredictPipeline:
             model_path=os.path.join("artifacts","model.pkl")
             model=load_object(file_path=model_path)
             preds=model.predict(features)
-            return np.exp(preds)
+            return int(np.exp(preds))
         
         except Exception as e:
             raise CustomException(e,sys)
@@ -36,6 +36,10 @@ class CustomData:
             return pd.DataFrame(custom_dict)
         except Exception as e:
             raise CustomException(e,sys)
+
+def get_locations():
+        df = pd.read_csv('artifacts\data.csv')
+        return df['Location'].unique()
 
 if __name__ == '__main__':
     custom_data = CustomData(720.0,1,'Kharghar')
