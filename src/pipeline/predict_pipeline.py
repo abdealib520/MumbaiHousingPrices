@@ -26,7 +26,7 @@ class CustomData:
         self.location = location
     def get_data_as_dataframe(self):
         try:
-            df = pd.read_csv('artifacts\data.csv')
+            df = pd.read_csv('artifacts/data.csv')
             location_encoded = df.loc[df['Location'] == self.location]['Location_Encoded'].iloc[0]
             custom_dict = {
                 'Area': [self.area],
