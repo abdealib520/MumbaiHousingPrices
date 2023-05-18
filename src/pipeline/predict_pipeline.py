@@ -11,8 +11,7 @@ class PredictPipeline:
 
     def predict(self,features):
         try:
-            model_path=os.path.join("artifacts","model.pkl")
-            model=load_object(file_path=model_path)
+            model=load_object(file_path='model.pkl')
             preds=model.predict(features)
             return int(np.exp(preds))
         
@@ -26,8 +25,7 @@ class CustomData:
         self.location = location
     def get_data_as_dataframe(self):
         try:
-            data_path = os.join('artifacts','data.csv')
-            df = pd.read_csv(data_path)
+            df = pd.read_csv('data.csv')
             location_encoded = df.loc[df['Location'] == self.location]['Location_Encoded'].iloc[0]
             custom_dict = {
                 'Area': [self.area],
@@ -39,7 +37,7 @@ class CustomData:
             raise CustomException(e,sys)
 
 def get_locations():
-        df = pd.read_csv('artifacts\data.csv')
+        df = pd.read_csv('data.csv')
         return df['Location'].unique()
 
 if __name__ == '__main__':
