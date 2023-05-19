@@ -1,8 +1,8 @@
-# [MumbaiHousingPrices] (https://abdealib520-mumbaihousingprices-app-w4wk4l.streamlit.app/)
+# [MumbaiHousingPrices](https://abdealib520-mumbaihousingprices-app-w4wk4l.streamlit.app/)
 This website will tell you what would be the price of your dream home in Mumbai.
 
 # Dataset
-The dataset that was used was from [Kaggle] (https://www.kaggle.com/datasets/sameep98/housing-prices-in-mumbai)
+The dataset that was used was from [Kaggle](https://www.kaggle.com/datasets/sameep98/housing-prices-in-mumbai)
 
 # Data Cleaning and Feature Engineering
 1. The boolean columns like New/Resale,Gymnasium,etc. were removed because the correlation between them and the target variable was too low.
