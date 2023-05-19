@@ -14,4 +14,4 @@ The dataset that was used was from [Kaggle](https://www.kaggle.com/datasets/same
 # Model Training
 1. Tested many different models like Linear, Lasso, Decision Tree, Gradient Booster, Ada booster on the data.
 2. Used Grid Search for Hyperparameter tuning. Also used multithreading to speed up the hyperparameter tuning process.
-3. The best model ended up being Gradient Booster with a score 91%.
+3. The best model ended up being Gradient Booster with a score of 91%.
