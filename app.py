@@ -8,7 +8,7 @@ predict = PredictPipeline()
 
 with st.form('form'):
     area = st.number_input(label='Area in sqft',min_value=150,step=50)
-    no_of_bedrooms = st.number_input(label='No of Bedrooms',min_value=1,step=1)
+    no_of_bedrooms = st.number_input(label='No of Bedrooms',min_value=0,step=1)
     location = st.selectbox(label='Location',options=get_locations())
     submitted = st.form_submit_button('Predict')
     if submitted:
