@@ -5,4 +5,8 @@ scikit-learn
 dill
 category_encoders
 streamlit
+selenium
+aiohttp
+beautifulsoup4
+ray
 -e .

@@ -18,7 +18,7 @@ def get_requirements(file_path:str)->List[str]:
 
 setup(
 name='MumbaiHousingPrices',
-version='0.0.1',
+version='0.1.1',
 author='Abdeali',
 author_email='abdealib520@gmail.com',
 packages=find_packages(),
