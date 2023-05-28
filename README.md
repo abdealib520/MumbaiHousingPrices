@@ -2,7 +2,7 @@
 This website will tell you what would be the price of your dream home in Mumbai.
 
 # Dataset
-The data was scraped entirely from [MagicBricks](www.magicbricks.com)
+The data was scraped entirely from [MagicBricks](https://www.magicbricks.com)
 
 # Data Cleaning and Feature Engineering
 1. Converted features like Price, Area and Bedrooms from strings like '1024sqft' to numeric values.
