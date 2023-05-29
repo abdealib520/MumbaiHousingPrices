@@ -4,6 +4,9 @@ This website will tell you what would be the price of your dream home in Mumbai.
 # Dataset
 The data was scraped entirely from [MagicBricks](https://www.magicbricks.com)
 
+# Shortcomings
+Generally speaking, houses and flats built more recently are much more likely to be sold on an online platform like MagicBricks. Home owmners are much less likely to sell their homes online, instead relying on local brokers. So MagicBricks mostly only has construction companies looking to sell their flats. Which is why the data taken from MagicBricks is likely to be biased towards more expensive and recently constructed houses and flats.
+
 # Data Cleaning and Feature Engineering
 1. Converted features like Price, Area and Bedrooms from strings like '1024sqft' to numeric values.
 2. Replaced missing values with the median.
