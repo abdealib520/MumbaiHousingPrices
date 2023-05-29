@@ -6,10 +6,10 @@ The data was scraped entirely from [MagicBricks](https://www.magicbricks.com)
 
 # Data Cleaning and Feature Engineering
 1. Converted features like Price, Area and Bedrooms from strings like '1024sqft' to numeric values.
-2. Removed missing values which were very few (under 100).
+2. Replaced missing values with the median.
 3. Used One Hot Encoding on the Locations feature.
 4. Features used for model training were Price as target feature and Area, Location and Bedrooms as input features.
-5. Applied a log transform on the Price feature to make it more normalized
+5. Applied a log transform on the Price feature to make it more normalized.
 
 # Model Training
 1. Tested many different models like Linear, Lasso, Decision Tree, Gradient Booster, Ada booster on the data.
